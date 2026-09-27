@@ -91,7 +91,7 @@ window.Store = (function () {
 
   const DB_NAME = "riyadh-plants";
   let dbPromise = null;
-  const photoCache = {}; // plantId -> [{ key, url }]
+  const photoCache = {}; // plantId -> [{ key, url, loc }]
 
   function db() {
     if (dbPromise) return dbPromise;
@@ -123,20 +123,51 @@ window.Store = (function () {
   function loadPhotos() {
     return tx("readonly", function (os) { return os.getAll(); }).then(function (rows) {
       (rows || []).forEach(function (row) {
-        (photoCache[row.plant] = photoCache[row.plant] || []).push({ key: row.key, url: URL.createObjectURL(row.blob) });
+        (photoCache[row.plant] = photoCache[row.plant] || []).push({ key: row.key, url: URL.createObjectURL(row.blob), loc: row.loc || null });
       });
     }).catch(function () { /* photos unavailable, e.g. private mode */ });
   }
 
   function myPhotos(id) { return photoCache[id] || []; }
 
-  function addPhoto(id, blob) {
-    return tx("readwrite", function (os) { return os.add({ plant: id, blob: blob, added: Date.now() }); })
+  // loc: { lat, lng } or null
+  function addPhoto(id, blob, loc) {
+    return tx("readwrite", function (os) { return os.add({ plant: id, blob: blob, added: Date.now(), loc: loc || null }); })
       .then(function (key) {
-        const item = { key: key, url: URL.createObjectURL(blob) };
+        const item = { key: key, url: URL.createObjectURL(blob), loc: loc || null };
         (photoCache[id] = photoCache[id] || []).push(item);
         return item;
       });
+  }
+
+  function setPhotoLocation(id, key, loc) {
+    return db().then(function (d) {
+      return new Promise(function (resolve, reject) {
+        const t = d.transaction("photos", "readwrite");
+        const os = t.objectStore("photos");
+        const req = os.get(key);
+        req.onsuccess = function () {
+          if (req.result) { req.result.loc = loc; os.put(req.result); }
+        };
+        t.oncomplete = function () {
+          const item = (photoCache[id] || []).find(function (p) { return p.key === key; });
+          if (item) item.loc = loc;
+          resolve();
+        };
+        t.onerror = function () { reject(t.error); };
+      });
+    });
+  }
+
+  // All of the learner's photos that have a location: [{ plant, key, url, loc }]
+  function sightings() {
+    const out = [];
+    Object.keys(photoCache).forEach(function (plant) {
+      photoCache[plant].forEach(function (p) {
+        if (p.loc) out.push({ plant: plant, key: p.key, url: p.url, loc: p.loc });
+      });
+    });
+    return out;
   }
 
   function removePhoto(id, key) {
@@ -165,6 +196,8 @@ window.Store = (function () {
     loadPhotos: loadPhotos,
     myPhotos: myPhotos,
     addPhoto: addPhoto,
+    setPhotoLocation: setPhotoLocation,
+    sightings: sightings,
     removePhoto: removePhoto
   };
 })();

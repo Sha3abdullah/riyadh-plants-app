@@ -1,5 +1,8 @@
-/* Offline support: the app and all photos are cached on first visit. */
-const VERSION = "v3";
+/* Offline support: the app and main photos are cached on first visit;
+   extra photos and map tiles are cached as you view them. */
+const VERSION = "v4";
+const TILE_CACHE = "riyadh-plants-tiles";
+const MAX_TILES = 400;
 const CACHE = "riyadh-plants-" + VERSION;
 const ASSETS = [
   "./",
@@ -7,6 +10,10 @@ const ASSETS = [
   "css/style.css",
   "js/data.js",
   "js/credits.js",
+  "js/i18n.js",
+  "js/world.js",
+  "vendor/leaflet/leaflet.js",
+  "vendor/leaflet/leaflet.css",
   "js/store.js",
   "js/app.js",
   "manifest.webmanifest",
@@ -52,7 +59,7 @@ self.addEventListener("install", (e) => {
 self.addEventListener("activate", (e) => {
   e.waitUntil(
     caches.keys()
-      .then((keys) => Promise.all(keys.filter((k) => k.startsWith("riyadh-plants-") && k !== CACHE).map((k) => caches.delete(k))))
+      .then((keys) => Promise.all(keys.filter((k) => k.startsWith("riyadh-plants-") && k !== CACHE && k !== TILE_CACHE).map((k) => caches.delete(k))))
       .then(() => self.clients.claim())
   );
 });
@@ -63,6 +70,21 @@ self.addEventListener("fetch", (e) => {
   const url = new URL(req.url);
   const sameOrigin = url.origin === self.location.origin;
   const isFont = url.hostname === "fonts.googleapis.com" || url.hostname === "fonts.gstatic.com";
+  const isTile = url.hostname === "tile.openstreetmap.org";
+
+  // Map tiles: cache the ones you've looked at so the map partly works offline.
+  if (isTile) {
+    e.respondWith(
+      caches.open(TILE_CACHE).then((c) => c.match(req).then((hit) => hit || fetch(req).then((res) => {
+        if (res.ok || res.type === "opaque") {
+          c.put(req, res.clone());
+          c.keys().then((keys) => { if (keys.length > MAX_TILES) keys.slice(0, keys.length - MAX_TILES).forEach((k) => c.delete(k)); });
+        }
+        return res;
+      })))
+    );
+    return;
+  }
   if (!sameOrigin && !isFont) return;
 
   // App code: network first so updates show up, cache as fallback when offline.
