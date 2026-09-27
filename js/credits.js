@@ -8,11 +8,11 @@ window.PHOTO_CREDITS = {
   "source": "https://commons.wikimedia.org/wiki/File:Dates005.jpg"
  },
  "sidr": {
-  "file": "Ziziphus-areva-israel.jpg",
-  "author": "Dov Grobgeld",
-  "license": "Public domain",
-  "licenseUrl": "",
-  "source": "https://commons.wikimedia.org/wiki/File:Ziziphus-areva-israel.jpg"
+  "file": "Ziziphus_spina-christi_kz05.jpg",
+  "author": "Krzysztof Ziarnek, Kenraiz",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Ziziphus_spina-christi_kz05.jpg"
  },
  "samur": {
   "file": "Vachellia_(ex_Acacia)_tortilis.jpg",

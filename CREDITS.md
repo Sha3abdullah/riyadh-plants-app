@@ -5,7 +5,7 @@ All plant photos come from [Wikimedia Commons](https://commons.wikimedia.org) un
 | Plant | Photo | Author | License |
 |---|---|---|---|
 | date-palm | [Dates005.jpg](https://commons.wikimedia.org/wiki/File:Dates005.jpg) | Nepenthes | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) |
-| sidr | [Ziziphus-areva-israel.jpg](https://commons.wikimedia.org/wiki/File:Ziziphus-areva-israel.jpg) | Dov Grobgeld | Public domain |
+| sidr | [Ziziphus_spina-christi_kz05.jpg](https://commons.wikimedia.org/wiki/File:Ziziphus_spina-christi_kz05.jpg) | Krzysztof Ziarnek, Kenraiz | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 | samur | [Vachellia_(ex_Acacia)_tortilis.jpg](https://commons.wikimedia.org/wiki/File:Vachellia_(ex_Acacia)_tortilis.jpg) | Robur.q | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) |
 | talh | [Acacia_gerrardii,_loof_en_bloeiwyses,_Walter_Sisulu_NBT.jpg](https://commons.wikimedia.org/wiki/File:Acacia_gerrardii,_loof_en_bloeiwyses,_Walter_Sisulu_NBT.jpg) | JMK | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) |
 | arak | [Peelo_10.jpg](https://commons.wikimedia.org/wiki/File:Peelo_10.jpg) | Mehdi.sq | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) |
