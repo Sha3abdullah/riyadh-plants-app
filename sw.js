@@ -1,5 +1,5 @@
 /* Offline support: the app and all photos are cached on first visit. */
-const VERSION = "v1";
+const VERSION = "v2";
 const CACHE = "riyadh-plants-" + VERSION;
 const ASSETS = [
   "./",

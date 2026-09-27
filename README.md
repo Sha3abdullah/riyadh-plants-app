@@ -41,5 +41,5 @@ js/app.js             flashcards, quiz, progress, plant pages
 sw.js                 offline cache
 manifest.webmanifest  home-screen install
 images/               plant photos, 800px wide
-tools/                photo download script
+tools/                photo download + logo scripts
 ```

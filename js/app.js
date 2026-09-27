@@ -163,6 +163,7 @@
     void view.offsetWidth;
     view.classList.add("view-enter");
     backBtn.hidden = name === "";
+    document.getElementById("logo").hidden = name !== "";
     routes[name].apply(null, parts.slice(1));
     window.scrollTo(0, 0);
   }
