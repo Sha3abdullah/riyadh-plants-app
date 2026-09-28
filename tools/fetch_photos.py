@@ -22,6 +22,7 @@ WIDTH = 800
 # Some Commons "Artist" fields hold a paragraph of text; use a short name instead.
 AUTHOR_FIX = {
     "Fruit_of_Conocarpus_lancifolius.jpg": "Matthew Smith",
+    "700_yr_red_river_gum.jpg": "fir0002 (flagstaffotos)",
     "09-06-2017_Oleander_(Nerium_oleander)_Arade_river,_Águas_Frias_de_Baixo,_Alte.JPG": "Kolforn",
 }
 

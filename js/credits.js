@@ -887,5 +887,839 @@ window.PHOTO_CREDITS = {
    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
    "source": "https://commons.wikimedia.org/wiki/File:20140809Mentha_spicata1.jpg"
   }
+ ],
+ "awsaj": [
+  {
+   "src": "images/awsaj.jpg",
+   "part": "shrub",
+   "file": "Lycium_shawii_kz04.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Lycium_shawii_kz04.jpg"
+  },
+  {
+   "src": "images/awsaj-2.jpg",
+   "part": "fruit",
+   "file": "Lycium_shawii_kz07.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Lycium_shawii_kz07.jpg"
+  },
+  {
+   "src": "images/awsaj-3.jpg",
+   "part": "flowers",
+   "file": "Lycium_shawii_flowers.JPG",
+   "author": "Eitan Ferman",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Lycium_shawii_flowers.JPG"
+  }
+ ],
+ "markh": [
+  {
+   "src": "images/markh.jpg",
+   "part": "shrub",
+   "file": "Leptadenia_pyrotechnica_kz01.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Leptadenia_pyrotechnica_kz01.jpg"
+  },
+  {
+   "src": "images/markh-2.jpg",
+   "part": "flowers",
+   "file": "Leptadenia_pyrotechnica_kz05.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Leptadenia_pyrotechnica_kz05.jpg"
+  },
+  {
+   "src": "images/markh-3.jpg",
+   "part": "pods",
+   "file": "Leptadenia_pyrotechnica_pods.JPG",
+   "author": "LRBurdak",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Leptadenia_pyrotechnica_pods.JPG"
+  }
+ ],
+ "arta": [
+  {
+   "src": "images/arta.jpg",
+   "part": "shrub",
+   "file": "Calligonum_comosum_kz06.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Calligonum_comosum_kz06.jpg"
+  },
+  {
+   "src": "images/arta-2.jpg",
+   "part": "fruit",
+   "file": "Calligonum_comosum_kz05.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Calligonum_comosum_kz05.jpg"
+  },
+  {
+   "src": "images/arta-3.jpg",
+   "part": "flowers",
+   "file": "Calligonum_comosum_flower_and_fruits_1.jpg",
+   "author": "Gideon Pisanty (Gidip) גדעון פיזנטי",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Calligonum_comosum_flower_and_fruits_1.jpg"
+  }
+ ],
+ "ushar": [
+  {
+   "src": "images/ushar.jpg",
+   "part": "shrub",
+   "file": "Calotropis_procera_(Aiton)_Dryand._(44745690375).jpg",
+   "author": "Dinesh Valke from Thane, India",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Calotropis_procera_(Aiton)_Dryand._(44745690375).jpg"
+  },
+  {
+   "src": "images/ushar-2.jpg",
+   "part": "fruit",
+   "file": "Calotropus_procera.jpg",
+   "author": "Mirador David",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Calotropus_procera.jpg"
+  },
+  {
+   "src": "images/ushar-3.jpg",
+   "part": "flowers",
+   "file": "Flower_of_Giant_Milkweed_(Calotropis_procera)_from_Rajasthan,_India.jpg",
+   "author": "Kingshuk Mondal",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Flower_of_Giant_Milkweed_(Calotropis_procera)_from_Rajasthan,_India.jpg"
+  }
+ ],
+ "hanzal": [
+  {
+   "src": "images/hanzal.jpg",
+   "part": "whole",
+   "file": "Adrar-Coloquinte.JPG",
+   "author": "Ji-Elle",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Adrar-Coloquinte.JPG"
+  },
+  {
+   "src": "images/hanzal-2.jpg",
+   "part": "fruit",
+   "file": "23)flore_d'El_kantara(Algerie).jpg",
+   "author": "Djennane Taoufik",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:23)flore_d%27El_kantara(Algerie).jpg"
+  },
+  {
+   "src": "images/hanzal-3.jpg",
+   "part": "flowers",
+   "file": "Citrullus_colocynthis_kz03.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Citrullus_colocynthis_kz03.jpg"
+  }
+ ],
+ "nussi": [
+  {
+   "src": "images/nussi.jpg",
+   "part": "whole",
+   "file": "Stipagrostis_plumosa_kz01.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Stipagrostis_plumosa_kz01.jpg"
+  },
+  {
+   "src": "images/nussi-2.jpg",
+   "part": "habitat",
+   "file": "Stipagrostis_plumosa_kz06.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Stipagrostis_plumosa_kz06.jpg"
+  }
+ ],
+ "thumam": [
+  {
+   "src": "images/thumam.jpg",
+   "part": "whole",
+   "file": "Panicum_turgidum_kz04.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Panicum_turgidum_kz04.jpg"
+  },
+  {
+   "src": "images/thumam-2.jpg",
+   "part": "flowers",
+   "file": "Panicum_turgidum_kz02.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Panicum_turgidum_kz02.jpg"
+  },
+  {
+   "src": "images/thumam-3.jpg",
+   "part": "habitat",
+   "file": "Panicum_turgidum_growing_in_Al_Maszhabiya.jpg",
+   "author": "Alex Sergeev (www.asergeev.com)",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Panicum_turgidum_growing_in_Al_Maszhabiya.jpg"
+  }
+ ],
+ "qaysoom": [
+  {
+   "src": "images/qaysoom.jpg",
+   "part": "shrub",
+   "file": "Achillea_fragrantissima_kz03.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Achillea_fragrantissima_kz03.jpg"
+  },
+  {
+   "src": "images/qaysoom-2.jpg",
+   "part": "flowers",
+   "file": "Achillea_fragrantissima_kz01.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Achillea_fragrantissima_kz01.jpg"
+  }
+ ],
+ "salam": [
+  {
+   "src": "images/salam.jpg",
+   "part": "tree",
+   "file": "Vachellia_flava_vel_Acacia_ehrenbergiana_kz05.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Vachellia_flava_vel_Acacia_ehrenbergiana_kz05.jpg"
+  },
+  {
+   "src": "images/salam-2.jpg",
+   "part": "thorns",
+   "file": "Vachellia_flava_vel_Acacia_ehrenbergiana_kz01.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Vachellia_flava_vel_Acacia_ehrenbergiana_kz01.jpg"
+  },
+  {
+   "src": "images/salam-3.jpg",
+   "part": "habitat",
+   "file": "Thorn_acacia_(Vachellia_flava)_in_southern_Qatar.jpg",
+   "author": "Alex Sergeev (www.asergeev.com)",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Thorn_acacia_(Vachellia_flava)_in_southern_Qatar.jpg"
+  }
+ ],
+ "sarh": [
+  {
+   "src": "images/sarh.jpg",
+   "part": "tree",
+   "file": "Maerua_crassifolia_118531253.jpg",
+   "author": "thibaudaronson",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Maerua_crassifolia_118531253.jpg"
+  },
+  {
+   "src": "images/sarh-2.jpg",
+   "part": "leaves",
+   "file": "Maerua_crassifolia_kz02.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Maerua_crassifolia_kz02.jpg"
+  },
+  {
+   "src": "images/sarh-3.jpg",
+   "part": "flowers",
+   "file": "Maerua_crassifolia_kz15.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Maerua_crassifolia_kz15.jpg"
+  }
+ ],
+ "dhanoon": [
+  {
+   "src": "images/dhanoon.jpg",
+   "part": "flowers",
+   "file": "Cistanche_tubulosa_Huqf_2.jpg",
+   "author": "Diorit",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Cistanche_tubulosa_Huqf_2.jpg"
+  },
+  {
+   "src": "images/dhanoon-2.jpg",
+   "part": "flowers",
+   "file": "Cistanche_tubulosa_(5385249984).jpg",
+   "author": "Dinesh Valke from Thane, India",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Cistanche_tubulosa_(5385249984).jpg"
+  },
+  {
+   "src": "images/dhanoon-3.jpg",
+   "part": "habitat",
+   "file": "Cistanche_tubulosa_kz05.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Cistanche_tubulosa_kz05.jpg"
+  }
+ ],
+ "humaidh": [
+  {
+   "src": "images/humaidh.jpg",
+   "part": "whole",
+   "file": "Rumex_vesicarius_kz06.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Rumex_vesicarius_kz06.jpg"
+  },
+  {
+   "src": "images/humaidh-2.jpg",
+   "part": "fruit",
+   "file": "Rumex_vesicarius_kz4.JPG",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Rumex_vesicarius_kz4.JPG"
+  },
+  {
+   "src": "images/humaidh-3.jpg",
+   "part": "fruit",
+   "file": "Acetosa_vesicaria_fruit.jpg",
+   "author": "Mark Marathon",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Acetosa_vesicaria_fruit.jpg"
+  }
+ ],
+ "sadan": [
+  {
+   "src": "images/sadan.jpg",
+   "part": "whole",
+   "file": "Neurada_procumbens_kz01.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Neurada_procumbens_kz01.jpg"
+  },
+  {
+   "src": "images/sadan-2.jpg",
+   "part": "fruit",
+   "file": "Neurada_procumbens_kz03.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Neurada_procumbens_kz03.jpg"
+  },
+  {
+   "src": "images/sadan-3.jpg",
+   "part": "flowers",
+   "file": "Neurada_procumbens_flower_1.jpg",
+   "author": "Gideon Pisanty (Gidip) גדעון פיזנטי",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Neurada_procumbens_flower_1.jpg"
+  }
+ ],
+ "albizia": [
+  {
+   "src": "images/albizia.jpg",
+   "part": "flowers",
+   "file": "Albizia_lebbeck_-_Shirish-Siris_Tree-.jpg",
+   "author": "Nizil Shah",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Albizia_lebbeck_-_Shirish-Siris_Tree-.jpg"
+  },
+  {
+   "src": "images/albizia-2.jpg",
+   "part": "tree",
+   "file": "Albizia_lebbeck_(Siris)_in_Hyderabad_W_IMG_7167.jpg",
+   "author": "J.M.Garg",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Albizia_lebbeck_(Siris)_in_Hyderabad_W_IMG_7167.jpg"
+  },
+  {
+   "src": "images/albizia-3.jpg",
+   "part": "pods",
+   "file": "Albizia_lebbeck_(L.)_Benth._(51950459592).jpg",
+   "author": "Dinesh Valke from Thane, India",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Albizia_lebbeck_(L.)_Benth._(51950459592).jpg"
+  }
+ ],
+ "tecoma": [
+  {
+   "src": "images/tecoma.jpg",
+   "part": "flowers",
+   "file": "Chirlobirlo_-_Fresnillo_(Tecoma_stans)_(14668973671).jpg",
+   "author": "Alejandro  Bayer Tamayo from Armenia, Colombia",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Chirlobirlo_-_Fresnillo_(Tecoma_stans)_(14668973671).jpg"
+  },
+  {
+   "src": "images/tecoma-2.jpg",
+   "part": "shrub",
+   "file": "Cores_das_flores_(12906084234).jpg",
+   "author": "Cícero R. C. Omena",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Cores_das_flores_(12906084234).jpg"
+  },
+  {
+   "src": "images/tecoma-3.jpg",
+   "part": "leaves",
+   "file": "Folhas_do_ipê-de-jardim_(do_tupi_'ypé),_Tecoma_stans_-_55218719526.jpg",
+   "author": "O Tupinólogo",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Folhas_do_ip%C3%AA-de-jardim_(do_tupi_%27yp%C3%A9),_Tecoma_stans_-_55218719526.jpg"
+  }
+ ],
+ "dodonaea": [
+  {
+   "src": "images/dodonaea.jpg",
+   "part": "shrub",
+   "file": "Dodonaea_viscosa_(5187413259).jpg",
+   "author": "David  Eickhoff from Pearl City, Hawaii, USA",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Dodonaea_viscosa_(5187413259).jpg"
+  },
+  {
+   "src": "images/dodonaea-2.jpg",
+   "part": "leaves",
+   "file": "Dodonaea_viscosa_kz_01.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Dodonaea_viscosa_kz_01.jpg"
+  },
+  {
+   "src": "images/dodonaea-3.jpg",
+   "part": "fruit",
+   "file": "Dodonaea_viscosa_Jacq._(AM_AK330062-1).jpg",
+   "author": "Ewen Cameron",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Dodonaea_viscosa_Jacq._(AM_AK330062-1).jpg"
+  }
+ ],
+ "casuarina": [
+  {
+   "src": "images/casuarina.jpg",
+   "part": "tree",
+   "file": "Casuarina_equisetifolia_(Boulevard_de_Garavan).jpg",
+   "author": "Tangopaso",
+   "license": "Public domain",
+   "licenseUrl": "",
+   "source": "https://commons.wikimedia.org/wiki/File:Casuarina_equisetifolia_(Boulevard_de_Garavan).jpg"
+  },
+  {
+   "src": "images/casuarina-2.jpg",
+   "part": "leaves",
+   "file": "Casuarina_equisetifolia_257711533.jpg",
+   "author": "Dinesh Valke",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Casuarina_equisetifolia_257711533.jpg"
+  },
+  {
+   "src": "images/casuarina-3.jpg",
+   "part": "fruit",
+   "file": "Casuarina_equisetifolia_257711549.jpg",
+   "author": "Dinesh Valke",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Casuarina_equisetifolia_257711549.jpg"
+  }
+ ],
+ "eucalyptus": [
+  {
+   "src": "images/eucalyptus.jpg",
+   "part": "tree",
+   "file": "Eucalyptus_camaldulensis_(villa_Hanbury,_Italy).jpg",
+   "author": "Tangopaso",
+   "license": "Public domain",
+   "licenseUrl": "",
+   "source": "https://commons.wikimedia.org/wiki/File:Eucalyptus_camaldulensis_(villa_Hanbury,_Italy).jpg"
+  },
+  {
+   "src": "images/eucalyptus-2.jpg",
+   "part": "bark",
+   "file": "700_yr_red_river_gum.jpg",
+   "author": "fir0002 (flagstaffotos)",
+   "license": "GFDL 1.2",
+   "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+   "source": "https://commons.wikimedia.org/wiki/File:700_yr_red_river_gum.jpg"
+  },
+  {
+   "src": "images/eucalyptus-3.jpg",
+   "part": "flowers",
+   "file": "Eucaliptus_rostrata.jpg",
+   "author": "איתן פרמן",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Eucaliptus_rostrata.jpg"
+  }
+ ],
+ "duranta": [
+  {
+   "src": "images/duranta.jpg",
+   "part": "flowers",
+   "file": "Duranta_erecta_(inflorescense).jpg",
+   "author": "Hans Hillewaert",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Duranta_erecta_(inflorescense).jpg"
+  },
+  {
+   "src": "images/duranta-2.jpg",
+   "part": "shrub",
+   "file": "Duranta_erecta_-_Kunming_Botanical_Garden_-_DSC03021.JPG",
+   "author": "Daderot",
+   "license": "Public domain",
+   "licenseUrl": "",
+   "source": "https://commons.wikimedia.org/wiki/File:Duranta_erecta_-_Kunming_Botanical_Garden_-_DSC03021.JPG"
+  },
+  {
+   "src": "images/duranta-3.jpg",
+   "part": "flowers",
+   "file": "Duranta_erecta_(2).JPG",
+   "author": "Prenn",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Duranta_erecta_(2).JPG"
+  }
+ ],
+ "periwinkle": [
+  {
+   "src": "images/periwinkle.jpg",
+   "part": "flowers",
+   "file": "Catharanthus_roseus_(Pink_Madagascar_Periwinkle).jpg",
+   "author": "AbhinavAnkur",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Catharanthus_roseus_(Pink_Madagascar_Periwinkle).jpg"
+  },
+  {
+   "src": "images/periwinkle-2.jpg",
+   "part": "whole",
+   "file": "2019-08-02_Catharanthus_roseus,_Ifaty,_Madagascar_2.jpg",
+   "author": "imbeaul",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:2019-08-02_Catharanthus_roseus,_Ifaty,_Madagascar_2.jpg"
+  },
+  {
+   "src": "images/periwinkle-3.jpg",
+   "part": "flowers",
+   "file": "Catharanthus_roseus_3_in_Ishigaki,_Okinawa.jpg",
+   "author": "M108t",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Catharanthus_roseus_3_in_Ishigaki,_Okinawa.jpg"
+  }
+ ],
+ "basil": [
+  {
+   "src": "images/basil.jpg",
+   "part": "leaves",
+   "file": "Basil-Basilico-Ocimum_basilicum-albahaca.jpg",
+   "author": "Castielli",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Basil-Basilico-Ocimum_basilicum-albahaca.jpg"
+  },
+  {
+   "src": "images/basil-2.jpg",
+   "part": "whole",
+   "file": "Basil_(4297661876).jpg",
+   "author": "Katrin Gilger",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Basil_(4297661876).jpg"
+  },
+  {
+   "src": "images/basil-3.jpg",
+   "part": "flowers",
+   "file": "Albahaca_Sagrada.jpg",
+   "author": "Armando Olivo Martín del Campo",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Albahaca_Sagrada.jpg"
+  }
+ ],
+ "henna": [
+  {
+   "src": "images/henna.jpg",
+   "part": "shrub",
+   "file": "Henna_(Lawsonia_inermis).jpg",
+   "author": "Mokkie",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Henna_(Lawsonia_inermis).jpg"
+  },
+  {
+   "src": "images/henna-2.jpg",
+   "part": "flowers",
+   "file": "Lawsonia_inermis_(3709419835).jpg",
+   "author": "Dinesh Valke from Thane, India",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Lawsonia_inermis_(3709419835).jpg"
+  },
+  {
+   "src": "images/henna-3.jpg",
+   "part": "fruit",
+   "file": "Henna_-_Mehendi_-_മൈലാഞ്ചി-4.JPG",
+   "author": "കാക്കര",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Henna_-_Mehendi_-_%E0%B4%AE%E0%B5%88%E0%B4%B2%E0%B4%BE%E0%B4%9E%E0%B5%8D%E0%B4%9A%E0%B4%BF-4.JPG"
+  }
+ ],
+ "grape": [
+  {
+   "src": "images/grape.jpg",
+   "part": "fruit",
+   "file": "2011.09.16.130358_Red_grapes_Theresienstrasse_Rhodt.jpg",
+   "author": "Hermann Luyken",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "source": "https://commons.wikimedia.org/wiki/File:2011.09.16.130358_Red_grapes_Theresienstrasse_Rhodt.jpg"
+  },
+  {
+   "src": "images/grape-2.jpg",
+   "part": "habitat",
+   "file": "2011.09.16.121353_Vitis_vinifera_restaurant_Rhodt.jpg",
+   "author": "Hermann Luyken",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "source": "https://commons.wikimedia.org/wiki/File:2011.09.16.121353_Vitis_vinifera_restaurant_Rhodt.jpg"
+  },
+  {
+   "src": "images/grape-3.jpg",
+   "part": "leaves",
+   "file": "Airén_vine.jpg",
+   "author": "BodegasAmbite (talk) (Uploads)",
+   "license": "Public domain",
+   "licenseUrl": "",
+   "source": "https://commons.wikimedia.org/wiki/File:Air%C3%A9n_vine.jpg"
+  }
+ ],
+ "mulberry": [
+  {
+   "src": "images/mulberry.jpg",
+   "part": "fruit",
+   "file": "Morus-alba.jpg",
+   "author": "GerardM",
+   "license": "CC BY-SA 2.1 es",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/es/deed.en",
+   "source": "https://commons.wikimedia.org/wiki/File:Morus-alba.jpg"
+  },
+  {
+   "src": "images/mulberry-2.jpg",
+   "part": "tree",
+   "file": "Maulbeerbaum.jpg",
+   "author": "SusEliKo",
+   "license": "CC BY-SA 3.0 at",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+   "source": "https://commons.wikimedia.org/wiki/File:Maulbeerbaum.jpg"
+  },
+  {
+   "src": "images/mulberry-3.jpg",
+   "part": "tree",
+   "file": "KH-St-Elisabeth-IMG_5333.JPG",
+   "author": "PictureObelix",
+   "license": "CC BY-SA 3.0 at",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+   "source": "https://commons.wikimedia.org/wiki/File:KH-St-Elisabeth-IMG_5333.JPG"
+  }
+ ],
+ "guava": [
+  {
+   "src": "images/guava.jpg",
+   "part": "fruit",
+   "file": "Foto_3_Jambu_(Psidium_guajava_L).jpg",
+   "author": "Ayuwadala",
+   "license": "CC BY 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Foto_3_Jambu_(Psidium_guajava_L).jpg"
+  },
+  {
+   "src": "images/guava-2.jpg",
+   "part": "flowers",
+   "file": "Fleur_de_goyavier.jpg",
+   "author": "Chirocca77",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "source": "https://commons.wikimedia.org/wiki/File:Fleur_de_goyavier.jpg"
+  },
+  {
+   "src": "images/guava-3.jpg",
+   "part": "bark",
+   "file": "Bayabas_bark2_748809262020.jpg",
+   "author": "Atsmgysy2254",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Bayabas_bark2_748809262020.jpg"
+  }
+ ],
+ "thayyil": [
+  {
+   "src": "images/thayyil.jpg",
+   "part": "whole",
+   "file": "Bermuda_grass_(Cynodon_dactylon).jpg",
+   "author": "Dhraxze",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Bermuda_grass_(Cynodon_dactylon).jpg"
+  },
+  {
+   "src": "images/thayyil-2.jpg",
+   "part": "flowers",
+   "file": "Bermudagrassflower.jpg",
+   "author": "Tieu ngao giang ho1970 at vi.wikipedia",
+   "license": "Public domain",
+   "licenseUrl": "",
+   "source": "https://commons.wikimedia.org/wiki/File:Bermudagrassflower.jpg"
+  },
+  {
+   "src": "images/thayyil-3.jpg",
+   "part": "flowers",
+   "file": "Cynodon_dactylon_(6170161363).jpg",
+   "author": "Matt Lavin from Bozeman, Montana, USA",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Cynodon_dactylon_(6170161363).jpg"
+  }
+ ],
+ "alfalfa": [
+  {
+   "src": "images/alfalfa.jpg",
+   "part": "flowers",
+   "file": "Medicago_sativa_Inflorescence_Closeup_CampoCalatrava.jpg",
+   "author": "javier martin",
+   "license": "Public domain",
+   "licenseUrl": "",
+   "source": "https://commons.wikimedia.org/wiki/File:Medicago_sativa_Inflorescence_Closeup_CampoCalatrava.jpg"
+  },
+  {
+   "src": "images/alfalfa-2.jpg",
+   "part": "leaves",
+   "file": "Alfals_de_Mallola.jpg",
+   "author": "Victor M. Vicente Selvas",
+   "license": "Public domain",
+   "licenseUrl": "",
+   "source": "https://commons.wikimedia.org/wiki/File:Alfals_de_Mallola.jpg"
+  },
+  {
+   "src": "images/alfalfa-3.jpg",
+   "part": "pods",
+   "file": "Medicago_sativa_CloseUpCurlySeedPod.jpg",
+   "author": "SriMesh",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Medicago_sativa_CloseUpCurlySeedPod.jpg"
+  }
+ ],
+ "shih": [
+  {
+   "src": "images/shih.jpg",
+   "part": "shrub",
+   "file": "Artemisia_herba-alba_1.jpg",
+   "author": "Ghislain118 http://www.fleurs-des-montagnes.net",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Artemisia_herba-alba_1.jpg"
+  },
+  {
+   "src": "images/shih-2.jpg",
+   "part": "habitat",
+   "file": "Artemisia_herba-alba_tunisia.JPG",
+   "author": "GYassineMrabetTalk✉",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Artemisia_herba-alba_tunisia.JPG"
+  }
+ ],
+ "kaff": [
+  {
+   "src": "images/kaff.jpg",
+   "part": "whole",
+   "file": "Anastatica_hierochuntica_kz02.jpg",
+   "author": "Krzysztof Ziarnek, Kenraiz",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Anastatica_hierochuntica_kz02.jpg"
+  },
+  {
+   "src": "images/kaff-2.jpg",
+   "part": "flowers",
+   "file": "Anastatica_hierochuntica_flower.JPG",
+   "author": "Phil41",
+   "license": "CC BY 1.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/1.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Anastatica_hierochuntica_flower.JPG"
+  }
+ ],
+ "clerodendrum": [
+  {
+   "src": "images/clerodendrum.jpg",
+   "part": "shrub",
+   "file": "Clerodendron_inerme_05.JPG",
+   "author": "Vinayaraj",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Clerodendron_inerme_05.JPG"
+  },
+  {
+   "src": "images/clerodendrum-2.jpg",
+   "part": "flowers",
+   "file": "Clerodendrum_inerme_03044.jpg",
+   "author": "Vengolis",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Clerodendrum_inerme_03044.jpg"
+  },
+  {
+   "src": "images/clerodendrum-3.jpg",
+   "part": "fruit",
+   "file": "Volkameria_inermis_07396.JPG",
+   "author": "Vengolis",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Volkameria_inermis_07396.JPG"
+  }
  ]
 };

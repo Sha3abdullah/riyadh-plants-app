@@ -1,6 +1,6 @@
 # Riyadh Plants 🌿
 
-A small, mobile-first web app for learning the plants of Riyadh: the English name, the Arabic name, and how to recognise each one from its photo.
+A small, mobile-first web app for learning 60 plants of Riyadh: the English name, the Arabic name, and how to recognise each one from its photo.
 
 **Open it:** https://sha3abdullah.github.io/riyadh-plants-app/
 

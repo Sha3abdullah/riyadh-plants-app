@@ -426,5 +426,409 @@
    "file": "20140809Mentha_spicata1.jpg",
    "part": "flowers"
   }
+ ],
+ "awsaj": [
+  {
+   "file": "Lycium_shawii_kz04.jpg",
+   "part": "shrub"
+  },
+  {
+   "file": "Lycium_shawii_kz07.jpg",
+   "part": "fruit"
+  },
+  {
+   "file": "Lycium_shawii_flowers.JPG",
+   "part": "flowers"
+  }
+ ],
+ "markh": [
+  {
+   "file": "Leptadenia_pyrotechnica_kz01.jpg",
+   "part": "shrub"
+  },
+  {
+   "file": "Leptadenia_pyrotechnica_kz05.jpg",
+   "part": "flowers"
+  },
+  {
+   "file": "Leptadenia_pyrotechnica_pods.JPG",
+   "part": "pods"
+  }
+ ],
+ "arta": [
+  {
+   "file": "Calligonum_comosum_kz06.jpg",
+   "part": "shrub"
+  },
+  {
+   "file": "Calligonum_comosum_kz05.jpg",
+   "part": "fruit"
+  },
+  {
+   "file": "Calligonum_comosum_flower_and_fruits_1.jpg",
+   "part": "flowers"
+  }
+ ],
+ "ushar": [
+  {
+   "file": "Calotropis_procera_(Aiton)_Dryand._(44745690375).jpg",
+   "part": "shrub"
+  },
+  {
+   "file": "Calotropus_procera.jpg",
+   "part": "fruit"
+  },
+  {
+   "file": "Flower_of_Giant_Milkweed_(Calotropis_procera)_from_Rajasthan,_India.jpg",
+   "part": "flowers"
+  }
+ ],
+ "hanzal": [
+  {
+   "file": "Adrar-Coloquinte.JPG",
+   "part": "whole"
+  },
+  {
+   "file": "23)flore_d'El_kantara(Algerie).jpg",
+   "part": "fruit"
+  },
+  {
+   "file": "Citrullus_colocynthis_kz03.jpg",
+   "part": "flowers"
+  }
+ ],
+ "nussi": [
+  {
+   "file": "Stipagrostis_plumosa_kz01.jpg",
+   "part": "whole"
+  },
+  {
+   "file": "Stipagrostis_plumosa_kz06.jpg",
+   "part": "habitat"
+  }
+ ],
+ "thumam": [
+  {
+   "file": "Panicum_turgidum_kz04.jpg",
+   "part": "whole"
+  },
+  {
+   "file": "Panicum_turgidum_kz02.jpg",
+   "part": "flowers"
+  },
+  {
+   "file": "Panicum_turgidum_growing_in_Al_Maszhabiya.jpg",
+   "part": "habitat"
+  }
+ ],
+ "qaysoom": [
+  {
+   "file": "Achillea_fragrantissima_kz03.jpg",
+   "part": "shrub"
+  },
+  {
+   "file": "Achillea_fragrantissima_kz01.jpg",
+   "part": "flowers"
+  }
+ ],
+ "salam": [
+  {
+   "file": "Vachellia_flava_vel_Acacia_ehrenbergiana_kz05.jpg",
+   "part": "tree"
+  },
+  {
+   "file": "Vachellia_flava_vel_Acacia_ehrenbergiana_kz01.jpg",
+   "part": "thorns"
+  },
+  {
+   "file": "Thorn_acacia_(Vachellia_flava)_in_southern_Qatar.jpg",
+   "part": "habitat"
+  }
+ ],
+ "sarh": [
+  {
+   "file": "Maerua_crassifolia_118531253.jpg",
+   "part": "tree"
+  },
+  {
+   "file": "Maerua_crassifolia_kz02.jpg",
+   "part": "leaves"
+  },
+  {
+   "file": "Maerua_crassifolia_kz15.jpg",
+   "part": "flowers"
+  }
+ ],
+ "dhanoon": [
+  {
+   "file": "Cistanche_tubulosa_Huqf_2.jpg",
+   "part": "flowers"
+  },
+  {
+   "file": "Cistanche_tubulosa_(5385249984).jpg",
+   "part": "flowers"
+  },
+  {
+   "file": "Cistanche_tubulosa_kz05.jpg",
+   "part": "habitat"
+  }
+ ],
+ "humaidh": [
+  {
+   "file": "Rumex_vesicarius_kz06.jpg",
+   "part": "whole"
+  },
+  {
+   "file": "Rumex_vesicarius_kz4.JPG",
+   "part": "fruit"
+  },
+  {
+   "file": "Acetosa_vesicaria_fruit.jpg",
+   "part": "fruit"
+  }
+ ],
+ "sadan": [
+  {
+   "file": "Neurada_procumbens_kz01.jpg",
+   "part": "whole"
+  },
+  {
+   "file": "Neurada_procumbens_kz03.jpg",
+   "part": "fruit"
+  },
+  {
+   "file": "Neurada_procumbens_flower_1.jpg",
+   "part": "flowers"
+  }
+ ],
+ "albizia": [
+  {
+   "file": "Albizia_lebbeck_-_Shirish-Siris_Tree-.jpg",
+   "part": "flowers"
+  },
+  {
+   "file": "Albizia_lebbeck_(Siris)_in_Hyderabad_W_IMG_7167.jpg",
+   "part": "tree"
+  },
+  {
+   "file": "Albizia_lebbeck_(L.)_Benth._(51950459592).jpg",
+   "part": "pods"
+  }
+ ],
+ "tecoma": [
+  {
+   "file": "Chirlobirlo_-_Fresnillo_(Tecoma_stans)_(14668973671).jpg",
+   "part": "flowers"
+  },
+  {
+   "file": "Cores_das_flores_(12906084234).jpg",
+   "part": "shrub"
+  },
+  {
+   "file": "Folhas_do_ipê-de-jardim_(do_tupi_'ypé),_Tecoma_stans_-_55218719526.jpg",
+   "part": "leaves"
+  }
+ ],
+ "dodonaea": [
+  {
+   "file": "Dodonaea_viscosa_(5187413259).jpg",
+   "part": "shrub"
+  },
+  {
+   "file": "Dodonaea_viscosa_kz_01.jpg",
+   "part": "leaves"
+  },
+  {
+   "file": "Dodonaea_viscosa_Jacq._(AM_AK330062-1).jpg",
+   "part": "fruit"
+  }
+ ],
+ "casuarina": [
+  {
+   "file": "Casuarina_equisetifolia_(Boulevard_de_Garavan).jpg",
+   "part": "tree"
+  },
+  {
+   "file": "Casuarina_equisetifolia_257711533.jpg",
+   "part": "leaves"
+  },
+  {
+   "file": "Casuarina_equisetifolia_257711549.jpg",
+   "part": "fruit"
+  }
+ ],
+ "eucalyptus": [
+  {
+   "file": "Eucalyptus_camaldulensis_(villa_Hanbury,_Italy).jpg",
+   "part": "tree"
+  },
+  {
+   "file": "700_yr_red_river_gum.jpg",
+   "part": "bark"
+  },
+  {
+   "file": "Eucaliptus_rostrata.jpg",
+   "part": "flowers"
+  }
+ ],
+ "duranta": [
+  {
+   "file": "Duranta_erecta_(inflorescense).jpg",
+   "part": "flowers"
+  },
+  {
+   "file": "Duranta_erecta_-_Kunming_Botanical_Garden_-_DSC03021.JPG",
+   "part": "shrub"
+  },
+  {
+   "file": "Duranta_erecta_(2).JPG",
+   "part": "flowers"
+  }
+ ],
+ "periwinkle": [
+  {
+   "file": "Catharanthus_roseus_(Pink_Madagascar_Periwinkle).jpg",
+   "part": "flowers"
+  },
+  {
+   "file": "2019-08-02_Catharanthus_roseus,_Ifaty,_Madagascar_2.jpg",
+   "part": "whole"
+  },
+  {
+   "file": "Catharanthus_roseus_3_in_Ishigaki,_Okinawa.jpg",
+   "part": "flowers"
+  }
+ ],
+ "basil": [
+  {
+   "file": "Basil-Basilico-Ocimum_basilicum-albahaca.jpg",
+   "part": "leaves"
+  },
+  {
+   "file": "Basil_(4297661876).jpg",
+   "part": "whole"
+  },
+  {
+   "file": "Albahaca_Sagrada.jpg",
+   "part": "flowers"
+  }
+ ],
+ "henna": [
+  {
+   "file": "Henna_(Lawsonia_inermis).jpg",
+   "part": "shrub"
+  },
+  {
+   "file": "Lawsonia_inermis_(3709419835).jpg",
+   "part": "flowers"
+  },
+  {
+   "file": "Henna_-_Mehendi_-_മൈലാഞ്ചി-4.JPG",
+   "part": "fruit"
+  }
+ ],
+ "grape": [
+  {
+   "file": "2011.09.16.130358_Red_grapes_Theresienstrasse_Rhodt.jpg",
+   "part": "fruit"
+  },
+  {
+   "file": "2011.09.16.121353_Vitis_vinifera_restaurant_Rhodt.jpg",
+   "part": "habitat"
+  },
+  {
+   "file": "Airén_vine.jpg",
+   "part": "leaves"
+  }
+ ],
+ "mulberry": [
+  {
+   "file": "Morus-alba.jpg",
+   "part": "fruit"
+  },
+  {
+   "file": "Maulbeerbaum.jpg",
+   "part": "tree"
+  },
+  {
+   "file": "KH-St-Elisabeth-IMG_5333.JPG",
+   "part": "tree"
+  }
+ ],
+ "guava": [
+  {
+   "file": "Foto_3_Jambu_(Psidium_guajava_L).jpg",
+   "part": "fruit"
+  },
+  {
+   "file": "Fleur_de_goyavier.jpg",
+   "part": "flowers"
+  },
+  {
+   "file": "Bayabas_bark2_748809262020.jpg",
+   "part": "bark"
+  }
+ ],
+ "thayyil": [
+  {
+   "file": "Bermuda_grass_(Cynodon_dactylon).jpg",
+   "part": "whole"
+  },
+  {
+   "file": "Bermudagrassflower.jpg",
+   "part": "flowers"
+  },
+  {
+   "file": "Cynodon_dactylon_(6170161363).jpg",
+   "part": "flowers"
+  }
+ ],
+ "alfalfa": [
+  {
+   "file": "Medicago_sativa_Inflorescence_Closeup_CampoCalatrava.jpg",
+   "part": "flowers"
+  },
+  {
+   "file": "Alfals_de_Mallola.jpg",
+   "part": "leaves"
+  },
+  {
+   "file": "Medicago_sativa_CloseUpCurlySeedPod.jpg",
+   "part": "pods"
+  }
+ ],
+ "shih": [
+  {
+   "file": "Artemisia_herba-alba_1.jpg",
+   "part": "shrub"
+  },
+  {
+   "file": "Artemisia_herba-alba_tunisia.JPG",
+   "part": "habitat"
+  }
+ ],
+ "kaff": [
+  {
+   "file": "Anastatica_hierochuntica_kz02.jpg",
+   "part": "whole"
+  },
+  {
+   "file": "Anastatica_hierochuntica_flower.JPG",
+   "part": "flowers"
+  }
+ ],
+ "clerodendrum": [
+  {
+   "file": "Clerodendron_inerme_05.JPG",
+   "part": "shrub"
+  },
+  {
+   "file": "Clerodendrum_inerme_03044.jpg",
+   "part": "flowers"
+  },
+  {
+   "file": "Volkameria_inermis_07396.JPG",
+   "part": "fruit"
+  }
  ]
 }

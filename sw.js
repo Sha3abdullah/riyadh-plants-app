@@ -1,6 +1,6 @@
 /* Offline support: the app and main photos are cached on first visit;
    extra photos and map tiles are cached as you view them. */
-const VERSION = "v4";
+const VERSION = "v5";
 const TILE_CACHE = "riyadh-plants-tiles";
 const MAX_TILES = 400;
 const CACHE = "riyadh-plants-" + VERSION;
@@ -49,7 +49,37 @@ const ASSETS = [
   "images/pomegranate.jpg",
   "images/fig.jpg",
   "images/lemon.jpg",
-  "images/mint.jpg"
+  "images/mint.jpg",
+  "images/awsaj.jpg",
+  "images/markh.jpg",
+  "images/arta.jpg",
+  "images/ushar.jpg",
+  "images/hanzal.jpg",
+  "images/nussi.jpg",
+  "images/thumam.jpg",
+  "images/qaysoom.jpg",
+  "images/salam.jpg",
+  "images/sarh.jpg",
+  "images/dhanoon.jpg",
+  "images/humaidh.jpg",
+  "images/sadan.jpg",
+  "images/albizia.jpg",
+  "images/tecoma.jpg",
+  "images/dodonaea.jpg",
+  "images/casuarina.jpg",
+  "images/eucalyptus.jpg",
+  "images/duranta.jpg",
+  "images/periwinkle.jpg",
+  "images/basil.jpg",
+  "images/henna.jpg",
+  "images/grape.jpg",
+  "images/mulberry.jpg",
+  "images/guava.jpg",
+  "images/thayyil.jpg",
+  "images/alfalfa.jpg",
+  "images/shih.jpg",
+  "images/kaff.jpg",
+  "images/clerodendrum.jpg"
 ];
 
 self.addEventListener("install", (e) => {
