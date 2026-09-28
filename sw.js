@@ -1,6 +1,6 @@
 /* Offline support: the app and main photos are cached on first visit;
    extra photos and map tiles are cached as you view them. */
-const VERSION = "v5";
+const VERSION = "v6";
 const TILE_CACHE = "riyadh-plants-tiles";
 const MAX_TILES = 400;
 const CACHE = "riyadh-plants-" + VERSION;

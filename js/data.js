@@ -650,12 +650,12 @@ window.CITIES = {
       {
         id: "periwinkle",
         en: "Madagascar Periwinkle",
-        ar: "ونكة",
+        ar: "بفتة / ونكة",
         sci: "Catharanthus roseus",
         origin: "introduced",
         where: ["gardens", "streets"],
         fact: "The pink and white bedding flower you see in Riyadh's roundabouts. It's tough in the heat, and cancer medicines have been made from it.",
-        factAr: "زهرة الأحواض الوردية والبيضاء التي تراها في دوارات الرياض. تتحمل الحر، وصُنعت منها أدوية لعلاج السرطان.",
+        factAr: "تُعرف في السعودية باسم البفتة، وهي زهرة الأحواض الوردية والبيضاء التي تراها في دوارات الرياض. تتحمل الحر، وصُنعت منها أدوية لعلاج السرطان.",
         say: "kath-uh-RAN-thus ROH-zee-us",
         range: { en: "Madagascar", ar: "مدغشقر", countries: ["Madagascar"] }
       },
