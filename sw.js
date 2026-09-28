@@ -1,6 +1,6 @@
 /* Offline support: the app and main photos are cached on first visit;
    extra photos and map tiles are cached as you view them. */
-const VERSION = "v6";
+const VERSION = "v7";
 const TILE_CACHE = "riyadh-plants-tiles";
 const MAX_TILES = 400;
 const CACHE = "riyadh-plants-" + VERSION;
@@ -11,6 +11,7 @@ const ASSETS = [
   "js/data.js",
   "js/credits.js",
   "js/i18n.js",
+  "js/care.js",
   "js/world.js",
   "vendor/leaflet/leaflet.js",
   "vendor/leaflet/leaflet.css",
@@ -57,6 +58,8 @@ const ASSETS = [
   "images/hanzal.jpg",
   "images/nussi.jpg",
   "images/thumam.jpg",
+  "images/kaff.jpg",
+  "images/shih.jpg",
   "images/qaysoom.jpg",
   "images/salam.jpg",
   "images/sarh.jpg",
@@ -68,6 +71,7 @@ const ASSETS = [
   "images/dodonaea.jpg",
   "images/casuarina.jpg",
   "images/eucalyptus.jpg",
+  "images/clerodendrum.jpg",
   "images/duranta.jpg",
   "images/periwinkle.jpg",
   "images/basil.jpg",
@@ -77,9 +81,12 @@ const ASSETS = [
   "images/guava.jpg",
   "images/thayyil.jpg",
   "images/alfalfa.jpg",
-  "images/shih.jpg",
-  "images/kaff.jpg",
-  "images/clerodendrum.jpg"
+  "images/plumeria.jpg",
+  "images/rangoon.jpg",
+  "images/plumbago.jpg",
+  "images/vitex.jpg",
+  "images/ipomoea.jpg",
+  "images/shamoum.jpg"
 ];
 
 self.addEventListener("install", (e) => {

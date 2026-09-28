@@ -767,3 +767,72 @@ img { display: block; max-width: 100%; }
 .look-sub { font-size: 13px; color: var(--muted); }
 .look-vs { font-weight: 700; color: var(--muted); font-size: 13px; font-family: var(--font); }
 .look-tip { margin: 10px 2px 0; font-size: 15px; }
+
+/* ---------- Photo arrows ---------- */
+.ph-nav {
+  position: absolute; top: 50%; z-index: 4;
+  width: 44px; height: 44px; margin-top: -22px;
+  display: grid; place-items: center;
+  border: 0; border-radius: 50%;
+  background: rgba(255, 250, 240, 0.88);
+  color: #2d2a22;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s var(--ease);
+}
+.ph-nav:active { transform: scale(0.9); }
+.ph-prev { left: 10px; }
+.ph-next { right: 10px; }
+.ph-count {
+  position: absolute; bottom: 10px; right: 10px; z-index: 4;
+  padding: 2px 9px; border-radius: 999px;
+  font: 600 12px/1.6 var(--font);
+  background: rgba(27, 30, 22, 0.62); color: #fffaf0;
+}
+.face-back .ph-count { bottom: auto; top: 10px; }
+.strip-nav { position: relative; height: 0; }
+.strip-nav .ph-nav { top: -150px; }
+.strip-nav .ph-count { display: none; }
+@media (min-width: 480px) { .strip-nav .ph-nav { top: -190px; } }
+
+/* ---------- Care guide ---------- */
+.care-card { padding: 6px 14px 14px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow); }
+.care-row { display: grid; grid-template-columns: 28px minmax(0, 0.9fr) minmax(0, 1.4fr); gap: 8px; align-items: center; padding: 9px 0; border-bottom: 1px solid var(--border); font-size: 15px; }
+.care-ico { font-size: 18px; text-align: center; }
+.care-label { color: var(--muted); font-weight: 600; font-size: 14px; }
+.care-val { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.meter { display: inline-flex; gap: 3px; }
+.meter i { width: 10px; height: 10px; border-radius: 3px; background: var(--surface-2); border: 1px solid var(--border); }
+.meter i.on { background: var(--olive); border-color: var(--olive); }
+.care-bloom { grid-template-columns: 28px minmax(0, 1fr); }
+.care-bloom .care-label { grid-column: 2; }
+.bloom { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(12, 1fr); gap: 2px; }
+.bloom span { text-align: center; font-size: 10px; padding: 5px 0; border-radius: 6px; background: var(--surface-2); color: var(--muted); }
+.bloom span.on { background: #e9b949; color: #3b2a05; font-weight: 700; }
+.care-tip { margin: 12px 0 0; font-size: 15px; line-height: 1.6; }
+.care-warn { margin: 10px 0 0; padding: 10px 12px; border-radius: 12px; background: var(--bad-soft); color: var(--bad); font-size: 14px; font-weight: 600; }
+.types { display: grid; gap: 8px; }
+.type-item { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border-radius: 14px; background: var(--surface); border: 1px solid var(--border); }
+.type-item.here { border-color: var(--olive); }
+.type-item img { width: 48px; height: 48px; border-radius: 10px; object-fit: cover; flex: none; }
+.type-item p { margin: 0; font-size: 14px; }
+.type-item a { color: var(--olive-strong); font-weight: 700; }
+.sources { display: flex; flex-wrap: wrap; gap: 8px; }
+.source-link { padding: 8px 12px; border-radius: 12px; background: var(--surface); border: 1px solid var(--border); color: var(--olive-strong); font-weight: 600; font-size: 14px; text-decoration: none; }
+.ref-list { padding-inline-start: 20px; display: grid; gap: 10px; }
+.ref-list a { color: var(--olive-strong); font-weight: 600; }
+
+/* ---------- Wiki ---------- */
+.search {
+  width: 100%; min-height: 48px; margin-bottom: 12px; padding: 0 16px;
+  border: 1px solid var(--border); border-radius: 14px;
+  background: var(--surface); color: var(--text); font: inherit; font-size: 16px;
+}
+.search:focus { outline: 3px solid var(--olive); outline-offset: 1px; }
+.wiki-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+@media (min-width: 480px) { .wiki-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.wiki-card { display: flex; flex-direction: column; gap: 2px; padding: 0 0 10px; border: 1px solid var(--border); border-radius: 18px; background: var(--surface); box-shadow: var(--shadow); overflow: hidden; text-align: start; }
+.wiki-card .photo { aspect-ratio: 4 / 3; margin-bottom: 6px; }
+.wiki-name, .wiki-sub, .wiki-icons { padding: 0 10px; }
+.wiki-name { font-weight: 700; font-size: 15px; line-height: 1.25; }
+.wiki-sub { font-size: 13px; color: var(--olive-strong); }
+.wiki-icons { font-size: 12px; display: flex; gap: 8px; margin-top: 2px; }

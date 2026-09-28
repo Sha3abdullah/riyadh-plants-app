@@ -1,6 +1,6 @@
 # Riyadh Plants 🌿
 
-A small, mobile-first web app for learning 60 plants of Riyadh: the English name, the Arabic name, and how to recognise each one from its photo.
+A small, mobile-first web app for learning 66 plants of Riyadh: the English name, the Arabic name, and how to recognise each one from its photo.
 
 **Open it:** https://sha3abdullah.github.io/riyadh-plants-app/
 
@@ -15,6 +15,7 @@ A small, mobile-first web app for learning 60 plants of Riyadh: the English name
 - **Map.** A map of Riyadh showing places where each plant is commonly seen (Wadi Hanifa, Rawdat Khuraim, Al-Thumamah, Al-Salam Park…). Each plant's page has its own small map.
 - **Where it comes from.** A small world map on each plant's page highlighting its native range, with Riyadh marked.
 - **My sightings.** When you add your own photo, the app uses the location saved in the photo (or asks to use your current location) and pins it on your sightings map.
+- **Plant Wiki.** A searchable page of every plant with a care guide: sun or shade, water, salt tolerance, roots, soil and pH, size, how to propagate, flowering months in Riyadh, fertilizer and pruning tips, cautions, and links to Wikipedia, Kew and GBIF. Sources are listed in the app.
 - **My Progress.** A plant counts as mastered after 3 correct quiz answers in a row. Plants you get wrong come up more often.
 - **Add photo.** Every plant card has an *Add photo* button so you can save your own photo from your phone. It's stored on your device and shown next to the downloaded one.
 - Light and dark mode, installable on your home screen, and works offline after the first visit.
@@ -45,6 +46,7 @@ All photos come from Wikimedia Commons under free licenses. See [CREDITS.md](CRE
 ```
 index.html            app shell
 css/style.css         styles (sand + olive theme, light/dark)
+js/care.js            care guide (generated from tools/care_data.py)
 js/data.js            plant data, places and look-alikes, grouped by city
 js/i18n.js            interface text in English and Arabic
 js/world.js           offline world map for native ranges (generated)

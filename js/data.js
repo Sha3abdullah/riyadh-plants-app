@@ -239,13 +239,13 @@ window.CITIES = {
       },
       {
         id: "jasmine",
-        en: "Jasmine",
-        ar: "ياسمين",
+        en: "Arabian Jasmine (Fulla)",
+        ar: "فل جازاني / ياسمين عربي",
         sci: "Jasminum sambac",
         origin: "introduced",
         where: ["gardens"],
-        fact: "Arabian jasmine smells strongest in the evening. Its flowers are strung into garlands for Gulf weddings.",
-        factAr: "رائحة الياسمين العربي أقوى ما تكون في المساء، وتُنظم أزهاره في عقود لأعراس الخليج.",
+        fact: "In Saudi Arabia it is called fulla jazani, after Jazan where it is grown in fields. Its small white flowers smell strongest in the evening and are strung into garlands for weddings.",
+        factAr: "يسمى في السعودية الفل الجازاني نسبة إلى جازان حيث يُزرع في الحقول، ويسميه بعض الناس الياسمين العربي. أزهاره البيضاء الصغيرة أطيب ما تكون رائحتها في المساء، وتُنظم منه عقود الأعراس.",
         say: "JAZ-mi-num SAM-bak",
         range: { en: "Eastern Himalayas (India, Bhutan)", ar: "شرق الهيمالايا (الهند وبوتان)", countries: ["India", "Bhutan", "Bangladesh"] }
       },
@@ -470,7 +470,7 @@ window.CITIES = {
       {
         id: "kaff",
         en: "Kaff Maryam (Rose of Jericho)",
-        ar: "كف مريم",
+        ar: "كف مريم الصحراوي",
         sci: "Anastatica hierochuntica",
         origin: "native",
         where: ["desert"],
@@ -661,8 +661,8 @@ window.CITIES = {
       },
       {
         id: "basil",
-        en: "Basil",
-        ar: "ريحان",
+        en: "Italian Basil",
+        ar: "ريحان إيطالي",
         sci: "Ocimum basilicum",
         origin: "introduced",
         where: ["gardens", "farms"],
@@ -742,6 +742,80 @@ window.CITIES = {
         factAr: "محصول علف أخضر يُزرع في الدوائر الزراعية الكبيرة التي تراها من الطائرة حول الرياض. يُطعم للإبل والأغنام وأبقار الحليب.",
         say: "med-i-KAY-goh sa-TY-vuh",
         range: { en: "Iran, the Caucasus & Central Asia", ar: "إيران والقوقاز وآسيا الوسطى", countries: ["Iran", "Turkey", "Armenia", "Azerbaijan", "Georgia", "Afghanistan", "@CASIA"] }
+      },
+
+      // ---------- More garden plants (jasmines, kaff maryam tree, sitt al-hasan) ----------
+      {
+        id: "plumeria",
+        en: "Indian Jasmine (Frangipani)",
+        ar: "ياسمين هندي",
+        sci: "Plumeria obtusa",
+        origin: "introduced",
+        where: ["gardens", "streets"],
+        fact: "A small tree with thick branches, big oval leaves and large white flowers with a yellow centre and a sweet smell. Break a leaf or twig and white milky sap comes out, which irritates skin, so wash your hands.",
+        factAr: "شجرة صغيرة أغصانها سميكة وأوراقها بيضاوية كبيرة، وأزهارها بيضاء كبيرة وسطها أصفر ورائحتها حلوة. إذا كسرت ورقة أو غصناً يخرج منه حليب أبيض يهيّج الجلد، فاغسل يديك.",
+        say: "ploo-MEER-ee-uh ob-TOO-suh",
+        range: { en: "Caribbean & Central America", ar: "الكاريبي وأمريكا الوسطى", countries: ["Cuba", "Haiti", "Dominican Rep.", "Jamaica", "Puerto Rico", "Bahamas", "Mexico", "Belize", "Guatemala", "Honduras"] }
+      },
+      {
+        id: "rangoon",
+        en: "Red Climbing Jasmine (Rangoon Creeper)",
+        ar: "ياسمين أحمر متسلق",
+        sci: "Combretum indicum",
+        origin: "introduced",
+        where: ["gardens"],
+        fact: "A climbing vine grown over walls and pergolas. Its hanging flower clusters open white, turn pink, then deep red, all on the same plant, and smell very sweet, especially at night. Some people call it red Indian jasmine.",
+        factAr: "نبات متسلق يُزرع على الأسوار والعرائش. عناقيد أزهاره المتدلية تتفتح بيضاء ثم تصير وردية ثم حمراء داكنة، كلها على النبتة نفسها، ورائحتها حلوة جداً خاصة في الليل. ويسميه بعض الناس الياسمين الهندي الأحمر المتسلق.",
+        say: "kom-BREE-tum IN-di-kum",
+        range: { en: "South & Southeast Asia", ar: "جنوب وجنوب شرق آسيا", countries: ["India", "Bangladesh", "Myanmar", "Thailand", "Laos", "Cambodia", "Vietnam", "Malaysia", "Indonesia", "Philippines", "China"] }
+      },
+      {
+        id: "plumbago",
+        en: "Blue Jasmine (Plumbago)",
+        ar: "ياسمين أزرق",
+        sci: "Plumbago auriculata",
+        origin: "introduced",
+        where: ["gardens", "streets"],
+        fact: "A spreading shrub covered in clusters of sky-blue flowers for most of the year. It looks like jasmine but isn't related, and it has no scent. Its sticky seed pods cling to clothes.",
+        factAr: "شجيرة منتشرة تكتسي بعناقيد من الأزهار الزرقاء السماوية معظم أيام السنة. تشبه الياسمين في شكل الزهرة لكنها ليست من فصيلته وليس لها رائحة. وقرون بذورها لزجة تلتصق بالملابس.",
+        say: "plum-BAY-goh aw-rik-ew-LAY-tuh",
+        range: { en: "South Africa", ar: "جنوب أفريقيا", countries: ["South Africa", "eSwatini", "Lesotho", "Mozambique"] }
+      },
+      {
+        id: "vitex",
+        en: "Kaff Maryam Tree (Chaste Tree)",
+        ar: "كف مريم / شجرة العفة",
+        sci: "Vitex agnus-castus",
+        origin: "introduced",
+        where: ["gardens", "streets"],
+        fact: "A large shrub or small tree with hand-shaped leaves of 5–7 fingers, which is why it's called \"Mary's palm\". Its purple flower spikes bloom for most of the warm months and attract bees.",
+        factAr: "شجيرة كبيرة أو شجرة صغيرة أوراقها مقسّمة مثل الكف إلى 5 أو 7 أصابع، ولذلك تسمى «كف مريم». سنابل أزهارها البنفسجية تتفتح معظم الأشهر الدافئة وتجذب النحل.",
+        say: "VY-teks AG-nus KAS-tus",
+        range: { en: "Mediterranean to Central Asia", ar: "من البحر المتوسط إلى آسيا الوسطى", countries: ["Spain", "Portugal", "France", "Italy", "Greece", "Albania", "Croatia", "Turkey", "Cyprus", "@LEVANT", "Iraq", "Iran", "Afghanistan", "@CASIA", "Morocco", "Algeria", "Tunisia", "Libya", "Egypt"] }
+      },
+      {
+        id: "ipomoea",
+        en: "Morning Glory",
+        ar: "ست الحسن",
+        sci: "Ipomoea purpurea",
+        origin: "introduced",
+        where: ["gardens"],
+        fact: "A fast climbing vine with heart-shaped leaves and trumpet flowers in purple, blue or pink. Each flower opens in the morning and closes by afternoon. Its seeds are poisonous.",
+        factAr: "نبات متسلق سريع النمو أوراقه على شكل قلب، وأزهاره على شكل بوق بلون بنفسجي أو أزرق أو وردي. كل زهرة تتفتح في الصباح وتنغلق بعد الظهر. بذوره سامة.",
+        say: "ip-oh-MEE-uh pur-PEW-ree-uh",
+        range: { en: "Mexico & Central America", ar: "المكسيك وأمريكا الوسطى", countries: ["@CAMERICA"] }
+      },
+      {
+        id: "shamoum",
+        en: "Shamoum (Local Basil)",
+        ar: "شموم / ريحان بلدي",
+        sci: "Ocimum basilicum (local type)",
+        origin: "introduced",
+        where: ["gardens", "farms"],
+        fact: "The Saudi local basil. It grows tall purple flower spikes (shamarikh) and has a much stronger scent than Italian basil. People keep it in pots by the door and put a sprig in tea or by the bed for its smell.",
+        factAr: "الريحان البلدي السعودي. يطلع شماريخ زهرية بنفسجية طويلة، ورائحته أقوى بكثير من الريحان الإيطالي. يُزرع في أصص عند الأبواب، ويوضع منه غصن في الشاي أو قرب السرير لرائحته.",
+        say: "OSS-i-mum buh-SIL-i-kum",
+        range: { en: "Tropical Asia & Africa", ar: "المناطق الاستوائية في آسيا وأفريقيا", countries: ["India", "Sri Lanka", "Bangladesh", "Myanmar", "Thailand", "Pakistan", "Iran", "Ethiopia", "Kenya", "Tanzania"] }
       }
     ],
 
@@ -753,13 +827,13 @@ window.CITIES = {
       { id: "diriyah", en: "Diriyah (At-Turaif & Al-Bujairi)", ar: "الدرعية (الطريف والبجيري)", at: [24.734, 46.574],
         plants: ["date-palm", "athel", "lemon", "pomegranate", "fig", "grape", "mulberry", "henna"] },
       { id: "salam-park", en: "Al-Salam Park", ar: "منتزه السلام", at: [24.6237, 46.7069],
-        plants: ["date-palm", "washingtonia", "ficus", "neem", "bougainvillea", "oleander", "lantana", "albizia", "tecoma", "thayyil", "periwinkle", "eucalyptus"] },
+        plants: ["date-palm", "washingtonia", "ficus", "neem", "bougainvillea", "oleander", "lantana", "albizia", "tecoma", "thayyil", "periwinkle", "eucalyptus", "plumbago", "plumeria", "vitex"] },
       { id: "king-abdullah-park", en: "King Abdullah Park (Al-Malaz)", ar: "حديقة الملك عبدالله (الملز)", at: [24.6655, 46.7345],
-        plants: ["washingtonia", "ficus", "conocarpus", "bougainvillea", "hibiscus", "texas-sage", "duranta", "periwinkle", "thayyil", "clerodendrum"] },
+        plants: ["washingtonia", "ficus", "conocarpus", "bougainvillea", "hibiscus", "texas-sage", "duranta", "periwinkle", "thayyil", "clerodendrum", "plumbago", "vitex"] },
       { id: "king-fahd-road", en: "King Fahd Road & Olaya", ar: "طريق الملك فهد والعليا", at: [24.7115, 46.6745],
-        plants: ["washingtonia", "date-palm", "conocarpus", "ficus", "texas-sage", "parkinsonia", "lantana", "tecoma", "dodonaea", "clerodendrum", "albizia"] },
+        plants: ["washingtonia", "date-palm", "conocarpus", "ficus", "texas-sage", "parkinsonia", "lantana", "tecoma", "dodonaea", "clerodendrum", "albizia", "plumbago"] },
       { id: "home-gardens", en: "Home gardens (all over the city)", ar: "حدائق البيوت (في كل الأحياء)", at: [24.775, 46.72],
-        plants: ["jasmine", "hibiscus", "desert-rose", "aloe-vera", "mint", "moringa", "bougainvillea", "lemon", "basil", "henna", "grape", "guava", "duranta", "clerodendrum"] },
+        plants: ["jasmine", "hibiscus", "desert-rose", "aloe-vera", "mint", "moringa", "bougainvillea", "lemon", "basil", "henna", "grape", "guava", "duranta", "clerodendrum", "plumeria", "rangoon", "plumbago", "ipomoea", "vitex", "shamoum"] },
       { id: "thumamah", en: "Al-Thumamah National Park", ar: "منتزه الثمامة الوطني", at: [25.2, 46.62],
         plants: ["talh", "samur", "sidr", "ghada", "rimth", "harmal", "arfaj", "mesquite", "salam", "sarh", "awsaj", "arta", "nussi", "thumam", "hanzal", "dhanoon", "markh"] },
       { id: "rawdat-khuraim", en: "Rawdat Khuraim", ar: "روضة خريم", at: [25.385, 47.275],
@@ -810,7 +884,22 @@ window.CITIES = {
         ar: "الاثنان سياج أخضر لامع. أوراق الكلروديندرم متقابلة في أزواج، وأزهاره بيضاء بشوارب بنفسجية. أما أوراق الفيكس فمتبادلة، وإذا قطعت ورقة يخرج منها حليب أبيض." },
       { a: "hanzal", b: "ushar",
         en: "Both have round green fruit you'll see in the desert. Hanzal is a creeping vine with striped, solid fruit. Ushar is an upright shrub with big grey leaves and hollow, balloon-like fruit.",
-        ar: "الاثنان لهما ثمار خضراء مستديرة تراها في البر. الحنظل نبات زاحف ثمرته مخططة ومصمتة. أما العشار فشجيرة قائمة أوراقها كبيرة رمادية، وثمرته مجوّفة مثل البالون." }
+        ar: "الاثنان لهما ثمار خضراء مستديرة تراها في البر. الحنظل نبات زاحف ثمرته مخططة ومصمتة. أما العشار فشجيرة قائمة أوراقها كبيرة رمادية، وثمرته مجوّفة مثل البالون." },
+      { a: "jasmine", b: "plumeria",
+        en: "Fulla jazani is a small shrub with small white flowers and no milky sap. Indian jasmine is a small tree with thick branches, big oval leaves, big white flowers with a yellow centre, and white milky sap.",
+        ar: "الفل الجازاني شجيرة صغيرة أزهارها بيضاء صغيرة وليس فيها حليب. أما الياسمين الهندي فشجرة صغيرة أغصانها سميكة وأوراقها بيضاوية كبيرة، وأزهارها بيضاء كبيرة وسطها أصفر، وفيها حليب أبيض." },
+      { a: "rangoon", b: "bougainvillea",
+        en: "Both are red-pink climbers on walls. Red climbing jasmine has real tube flowers that change from white to red and smell sweet. Bougainvillea's colour comes from papery bracts and it has no scent.",
+        ar: "الاثنان متسلقان ولونهما أحمر وردي على الأسوار. الياسمين الأحمر المتسلق أزهاره حقيقية أنبوبية تتغير من الأبيض إلى الأحمر ورائحتها حلوة. أما الجهنمية فلونها من قنابات ورقية وليس لها رائحة." },
+      { a: "plumbago", b: "duranta",
+        en: "Both have blue-violet flowers. Blue jasmine has round clusters of pale sky-blue flowers at the tips. Duranta has hanging chains of violet flowers followed by golden berries.",
+        ar: "الاثنان أزهارهما زرقاء بنفسجية. الياسمين الأزرق عناقيده مستديرة بلون أزرق سماوي فاتح في أطراف الأغصان. أما الدورانتا فعناقيدها متدلية بنفسجية وتتبعها ثمار ذهبية." },
+      { a: "vitex", b: "kaff",
+        en: "Both are called kaff maryam. The tree (Vitex) has hand-shaped leaves and purple flower spikes. The desert one (Anastatica) is a tiny grey herb that dries into a ball and opens in water.",
+        ar: "الاثنان يسميان كف مريم. الشجرة (فيتكس) أوراقها مثل الكف وأزهارها سنابل بنفسجية. أما الصحراوية (أناستاتيكا) فعشبة رمادية صغيرة تجف وتلتف مثل الكرة وتنفتح في الماء." },
+      { a: "shamoum", b: "basil",
+        en: "Shamoum (local basil) has tall purple flower spikes, often purplish stems, and a strong scent. Italian basil has big, soft, shiny leaves, small white flowers, and a milder, sweet smell; it's the one used in cooking.",
+        ar: "الشموم (الريحان البلدي) شماريخه الزهرية بنفسجية طويلة وسيقانه غالباً مائلة للبنفسجي ورائحته قوية. أما الريحان الإيطالي فأوراقه كبيرة طرية لامعة وأزهاره بيضاء صغيرة ورائحته أخف وأحلى، وهو الذي يُستخدم في الطبخ." }
     ]
   }
 };

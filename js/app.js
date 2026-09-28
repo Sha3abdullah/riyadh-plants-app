@@ -156,6 +156,17 @@
     return out + "</span>";
   }
 
+  const ARROW_L = '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  const ARROW_R = '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+
+  // Left/right buttons over a photo plus a "2 / 3" counter. Always left = previous.
+  function navHTML(count, idx) {
+    if (count < 2) return "";
+    return '<button class="ph-nav ph-prev" data-nav="-1" aria-label="' + t("prevPhoto") + '">' + ARROW_L + "</button>" +
+      '<button class="ph-nav ph-next" data-nav="1" aria-label="' + t("nextPhoto") + '">' + ARROW_R + "</button>" +
+      '<span class="ph-count" dir="ltr">' + (idx + 1) + " / " + count + "</span>";
+  }
+
   function preload(srcs) {
     srcs.forEach(function (s) { const i = new Image(); i.src = s; });
   }
@@ -454,7 +465,8 @@
     progress: renderProgress,
     plant: renderPlant,
     map: renderMap,
-    look: renderLook
+    look: renderLook,
+    wiki: renderWiki
   };
 
   function go(path) { location.hash = "#/" + path; }
@@ -476,7 +488,7 @@
   }
 
   backBtn.addEventListener("click", function () {
-    if (history.length > 1 && /^#\/(plant|map\/)/.test(location.hash)) history.back(); else go("");
+    if (history.length > 1 && /^#\/(plant|map\/|wiki\/)/.test(location.hash)) history.back(); else go("");
   });
 
   /* ================= Home ================= */
@@ -505,6 +517,8 @@
         '<svg viewBox="0 0 24 24" width="28" height="28"><path d="M9 4 3.5 6v14L9 18l6 2 5.5-2V4L15 6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 4v14M15 6v14" stroke="currentColor" stroke-width="2"/></svg>') +
       menuItem("look", t("lookalikes"), t("lookDesc"),
         '<svg viewBox="0 0 24 24" width="28" height="28"><circle cx="8" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/></svg>') +
+      menuItem("wiki", t("wiki"), t("wikiDesc"),
+        '<svg viewBox="0 0 24 24" width="28" height="28"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5zM13 4h5.5A1.5 1.5 0 0 1 20 5.5v13a1.5 1.5 0 0 1-1.5 1.5H13z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>') +
       menuItem("progress", t("progress"), t("progressDesc"),
         '<svg viewBox="0 0 24 24" width="28" height="28"><path d="M12 21c-4.5-2.5-7-6.2-7-10.5C5 7 7.5 4 12 3c4.5 1 7 4 7 7.5 0 4.3-2.5 8-7 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>') +
       "</nav></div>"
@@ -549,7 +563,11 @@
     let deck, index, known, learning;
 
     function start(list) {
-      deck = list || weightedOrder(filtered(filter));
+      // Plain random shuffle every time, so the order never repeats a pattern.
+      // Avoid starting with the same plant as the last deck.
+      deck = list || shuffle(filtered(filter));
+      const last = Store.setting("lastCard");
+      if (!list && deck.length > 1 && deck[0].id === last) deck.push(deck.shift());
       index = 0; known = 0; learning = [];
       draw();
     }
@@ -570,13 +588,12 @@
 
     function drawCard() {
       const p = deck[index];
+      Store.setting("lastCard", p.id);
       const photos = photosOf(p);
       let photoIdx = 0;
       const next = deck[index + 1];
       if (next) preload([mainPhoto(next)]);
-      const dots = photos.length > 1
-        ? '<div class="photo-dots" dir="ltr">' + photos.map(function (_, i) { return '<span class="' + (i === 0 ? "on" : "") + '"></span>'; }).join("") + "</div>"
-        : "";
+      const dots = navHTML(photos.length, 0);
 
       const wrap = h(
         '<div class="fc-wrap">' +
@@ -586,9 +603,9 @@
         '<span class="swipe-label swipe-know">' + t("knowIt") + '</span><span class="swipe-label swipe-learn">' + t("stillLearning") + "</span>" +
         '<div class="card" role="button" tabindex="0">' +
         '<div class="face face-front"><div class="photo">' + imgHTML(photos[0].src, "?", true) + dots + "</div>" +
-        '<div class="hint">' + (photos.length > 1 ? t("tapDots") + " · " : "") + t("whatPlant") + "</div></div>" +
+        '<div class="hint">' + t("whatPlant") + "</div></div>" +
         '<div class="face face-back">' +
-        '<div class="photo">' + imgHTML(photos[0].src, p.en, true) + '<span class="part-slot">' + partLabel(photos[0]) + "</span></div>" +
+        '<div class="photo">' + imgHTML(photos[0].src, p.en, true) + '<span class="part-slot">' + partLabel(photos[0]) + "</span>" + navHTML(photos.length, 0) + "</div>" +
         '<div class="back-body">' + namesHTML(p) +
         '<div class="chips">' + originChip(p) + whereChips(p) + "</div>" +
         '<p class="fact"><b>' + t("funFact") + "</b> " + esc(fact(p)) + "</p>" +
@@ -617,7 +634,7 @@
         photoIdx = (i + photos.length) % photos.length;
         const ph = photos[photoIdx];
         wrap.querySelectorAll(".face img").forEach(function (im) { im.src = ph.src; });
-        wrap.querySelectorAll(".photo-dots span").forEach(function (d, k) { d.classList.toggle("on", k === photoIdx); });
+        wrap.querySelectorAll(".ph-count").forEach(function (c) { c.textContent = (photoIdx + 1) + " / " + photos.length; });
         wrap.querySelector(".credit-slot").innerHTML = creditHTML(ph);
         wrap.querySelector(".part-slot").innerHTML = partLabel(ph);
       }
@@ -632,6 +649,12 @@
         setTimeout(function () { index++; draw(); }, 300);
       }
 
+      wrap.querySelectorAll("[data-nav]").forEach(function (b) {
+        b.addEventListener("click", function (e) {
+          e.stopPropagation();
+          showPhoto(photoIdx + Number(b.dataset.nav));
+        });
+      });
       wrap.querySelector('[data-act="know"]').addEventListener("click", function () { answer(true); });
       wrap.querySelector('[data-act="learning"]').addEventListener("click", function () { answer(false); });
       wrap.querySelector('[data-act="add"]').addEventListener("click", function (e) {
@@ -685,10 +708,6 @@
           return;
         }
         if (e.type === "pointerup" && Math.abs(dx) < 10 && Math.abs(dy) < 10 && !e.target.closest("button, a")) {
-          if (photos.length > 1 && !card.classList.contains("flipped") && e.target.closest(".face-front .photo")) {
-            const r = stage.getBoundingClientRect();
-            if (e.clientY > r.top + r.height * 0.8) return showPhoto(photoIdx + 1);
-          }
           flip();
         }
       }
@@ -981,6 +1000,7 @@
             "</div>";
         }).join("") +
         "</div>" +
+        (photos.length > 1 ? '<div class="strip-nav">' + navHTML(photos.length, 0) + "</div>" : "") +
         (photos.length > 1 ? '<div class="thumbs">' + photos.map(function (ph, k) {
           return '<button class="thumb' + (k === 0 ? " on" : "") + '" data-thumb="' + k + '">' + imgHTML(ph.src, "") + "</button>";
         }).join("") + "</div>" : "") +
@@ -989,6 +1009,8 @@
         namesHTML(p) +
         '<div class="chips">' + originChip(p) + whereChips(p) + "</div>" +
         '<p class="fact"><b>' + t("funFact") + "</b> " + esc(fact(p)) + "</p>" +
+
+        careHTML(p) +
 
         (spots.length || Store.myPhotos(p.id).some(function (m) { return m.loc; }) ?
           '<h3 class="section-title">' + t("whereRiyadh") + "</h3>" +
@@ -1005,7 +1027,7 @@
         '<div class="stat"><div class="stat-num">' + st.correct + '</div><div class="stat-label">' + t("correctStat") + "</div></div>" +
         '<div class="stat"><div class="stat-num">' + st.wrong + '</div><div class="stat-label">' + t("wrongStat") + "</div></div>" +
         '<div class="stat"><div class="stat-num" dir="ltr">' + Math.min(st.streak, 3) + '/3</div><div class="stat-label">' + (Store.isMastered(p.id) ? t("statMastered") : t("streak")) + "</div></div>" +
-        "</div></div></div>"
+        "</div>" + sourcesHTML(p) + "</div></div>"
       );
       view.appendChild(el);
 
@@ -1018,10 +1040,20 @@
           strip.scrollTo({ left: (isAr() ? -1 : 1) * k * strip.clientWidth, behavior: "smooth" });
         });
       });
+      let cur = 0;
+      function goPhoto(k) {
+        cur = (k + photos.length) % photos.length;
+        strip.scrollTo({ left: (isAr() ? -1 : 1) * cur * strip.clientWidth, behavior: "smooth" });
+      }
       strip.addEventListener("scroll", function () {
-        const k = Math.round(Math.abs(strip.scrollLeft) / strip.clientWidth);
-        thumbs.forEach(function (b, j) { b.classList.toggle("on", j === k); });
+        cur = Math.round(Math.abs(strip.scrollLeft) / strip.clientWidth);
+        thumbs.forEach(function (b, j) { b.classList.toggle("on", j === cur); });
+        const cnt = el.querySelector(".strip-nav .ph-count");
+        if (cnt) cnt.textContent = (cur + 1) + " / " + photos.length;
       }, { passive: true });
+      el.querySelectorAll(".strip-nav [data-nav]").forEach(function (b) {
+        b.addEventListener("click", function () { goPhoto(cur + Number(b.dataset.nav)); });
+      });
 
       el.querySelector('[data-act="add"]').addEventListener("click", function () {
         askForPhoto(p.id, function () {
@@ -1063,6 +1095,131 @@
     }
 
     draw();
+  }
+
+  /* ================= Care guide ================= */
+
+  const MONTHS = {
+    en: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    ar: ["ينا", "فبر", "مار", "أبر", "ماي", "يون", "يول", "أغس", "سبت", "أكت", "نوف", "ديس"]
+  };
+  const LEVEL = { low: 1, med: 2, high: 3 };
+
+  function meter(level) {
+    const n = LEVEL[level] || 0;
+    return '<span class="meter" aria-hidden="true">' + [1, 2, 3].map(function (i) { return '<i class="' + (i <= n ? "on" : "") + '"></i>'; }).join("") + "</span>";
+  }
+
+  function careRow(icon, label, value, extra) {
+    return '<div class="care-row"><span class="care-ico" aria-hidden="true">' + icon + '</span><span class="care-label">' + label +
+      '</span><span class="care-val">' + (extra || "") + value + "</span></div>";
+  }
+
+  function careHTML(p) {
+    const c = window.CARE && CARE[p.id];
+    if (!c) return "";
+    const tl = isAr() ? "ar" : "en";
+    const bloom = '<div class="bloom" dir="ltr">' + MONTHS[tl].map(function (m, i) {
+      return '<span class="' + (c.bloom.indexOf(i + 1) >= 0 ? "on" : "") + '">' + m + "</span>";
+    }).join("") + "</div>";
+    let types = "";
+    const tlist = typeof c.types === "string" ? (CARE[c.types] && CARE[c.types].types) : c.types;
+    if (tlist) {
+      types = '<h3 class="section-title">' + t("typesTitle") + '</h3><div class="types">' + tlist.map(function (x) {
+        const link = x.id && x.id !== p.id && BY_ID[x.id];
+        const here = x.id === p.id;
+        return '<div class="type-item' + (here ? " here" : "") + '">' + (link ? '<img src="' + mainPhoto(BY_ID[x.id]) + '" alt="">' : "") +
+          "<p>" + esc(x[tl]) + (link ? ' <a href="#/plant/' + x.id + '">' + t("openPage") + "</a>" : "") + "</p></div>";
+      }).join("") + "</div>";
+    }
+    return '<h3 class="section-title">' + t("careTitle") + "</h3>" +
+      '<div class="care-card">' +
+      careRow("☀️", t("c.sun"), t("sun." + c.sun)) +
+      careRow("💧", t("c.water"), t("lvl." + c.water), meter(c.water)) +
+      careRow("🧂", t("c.salt"), t("lvl." + c.salt), meter(c.salt)) +
+      careRow("🌱", t("c.roots"), t("roots." + c.roots)) +
+      careRow("🪴", t("c.soil"), t("soil." + c.soil) + " · " + t("ph." + c.ph)) +
+      careRow("📏", t("c.height"), '<bdi dir="ltr">' + esc(c.h) + "</bdi> · " + t("growth." + c.growth)) +
+      careRow("✂️", t("c.prop"), c.prop.map(function (x) { return t("prop." + x); }).join(isAr() ? "، " : ", ")) +
+      '<div class="care-row care-bloom"><span class="care-ico" aria-hidden="true">🌸</span><span class="care-label">' + t("c.bloom") + "</span>" +
+      (c.bloom.length ? bloom : '<span class="care-val">' + t("noFlowers") + "</span>") + "</div>" +
+      '<p class="care-tip">' + esc(c.tip[tl]) + "</p>" +
+      (c.warn ? '<p class="care-warn">⚠️ ' + esc(c.warn[tl]) + "</p>" : "") +
+      "</div>" + types;
+  }
+
+  function sourcesHTML(p) {
+    const sci = p.sci.replace(/\s*\(.*\)$/, "");
+    const q = encodeURIComponent(sci);
+    const links = [
+      ["Wikipedia", "https://en.wikipedia.org/wiki/" + encodeURIComponent(sci.replace(/ /g, "_"))],
+      ["ويكيبيديا العربية", "https://ar.wikipedia.org/w/index.php?search=" + encodeURIComponent(p.ar.split(" / ")[0])],
+      ["Kew – Plants of the World Online", "https://powo.science.kew.org/results?q=" + q],
+      ["GBIF", "https://www.gbif.org/species/search?q=" + q]
+    ];
+    return '<h3 class="section-title">' + t("readMore") + '</h3><div class="sources">' +
+      links.map(function (l) { return '<a class="source-link" href="' + l[1] + '" target="_blank" rel="noopener">' + l[0] + " ↗</a>"; }).join("") +
+      '</div><p class="note">' + t("sourcesNote") + ' <a href="#/wiki/about">' + t("sourcesList") + "</a></p>";
+  }
+
+  /* ================= Plant wiki (gallery) ================= */
+
+  function renderWiki(sub) {
+    topTitle.textContent = t("wiki");
+    if (sub === "about") return renderSources();
+    let filter = "all", q = "";
+    const el = h(
+      '<div><input class="search" type="search" placeholder="' + t("searchPh") + '" aria-label="' + t("searchPh") + '">' +
+      filterHTML(filter) + '<p class="note wiki-count"></p><div class="wiki-grid"></div>' +
+      '<p class="note"><a href="#/wiki/about">' + t("sourcesList") + "</a></p></div>"
+    );
+    view.appendChild(el);
+    const grid = el.querySelector(".wiki-grid");
+    function norm(s) { return String(s).toLowerCase().replace(/[\u064B-\u0652]/g, "").replace(/[أإآ]/g, "ا").replace(/ة/g, "ه").replace(/ى/g, "ي"); }
+    function draw() {
+      const list = filtered(filter).filter(function (p) {
+        if (!q) return true;
+        return norm(p.en + " " + p.ar + " " + p.sci).indexOf(norm(q)) >= 0;
+      }).slice().sort(function (a, b) { return isAr() ? a.ar.localeCompare(b.ar, "ar") : a.en.localeCompare(b.en); });
+      el.querySelector(".wiki-count").textContent = t("plantsCount", { n: list.length });
+      grid.innerHTML = list.map(function (p) {
+        const c = CARE[p.id] || {};
+        return '<button class="wiki-card" data-plant="' + p.id + '"><div class="photo">' + imgHTML(mainPhoto(p), p.en) + "</div>" +
+          '<span class="wiki-name">' + esc(isAr() ? p.ar : p.en) + '</span><span class="wiki-sub">' + esc(isAr() ? p.en : p.ar) + "</span>" +
+          '<span class="wiki-icons">' + (c.sun ? '<span title="' + esc(t("sun." + c.sun)) + '">' + (c.sun === "part" ? "⛅" : c.sun === "fullpart" ? "🌤️" : "☀️") + "</span>" : "") +
+          (c.water ? '<span title="' + esc(t("lvl." + c.water)) + '">' + (c.water === "low" ? "💧" : c.water === "med" ? "💧💧" : "💧💧💧") + "</span>" : "") + "</span></button>";
+      }).join("");
+      grid.querySelectorAll("[data-plant]").forEach(function (b) {
+        b.addEventListener("click", function () { go("plant/" + b.dataset.plant); });
+      });
+    }
+    el.querySelector(".search").addEventListener("input", function (e) { q = e.target.value.trim(); draw(); });
+    el.querySelectorAll("[data-filter]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        filter = b.dataset.filter;
+        el.querySelectorAll("[data-filter]").forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+        draw();
+      });
+    });
+    draw();
+  }
+
+  function renderSources() {
+    topTitle.textContent = t("sourcesList");
+    const refs = [
+      ["Royal Botanic Gardens, Kew – Plants of the World Online", "https://powo.science.kew.org/", "names, native ranges"],
+      ["Royal Horticultural Society (RHS) – Plants", "https://www.rhs.org.uk/plants", "sun, soil, pruning"],
+      ["Missouri Botanical Garden – Plant Finder", "https://www.missouribotanicalgarden.org/plantfinder/plantfindersearch.aspx", "culture, water, maintenance"],
+      ["UF/IFAS Extension (University of Florida) – Gardening Solutions", "https://gardeningsolutions.ifas.ufl.edu/", "tropical ornamentals, salt tolerance, fertilizing"],
+      ["FAO – Date palm cultivation", "https://www.fao.org/3/y4360e/y4360e00.htm", "date palm care"],
+      ["Chaudhary, S. A. (1999–2001) Flora of the Kingdom of Saudi Arabia", "", "native plants"],
+      ["Collenette, S. (1999) Wildflowers of Saudi Arabia", "", "native plants, flowering"],
+      ["Ministry of Environment, Water & Agriculture (MEWA)", "https://www.mewa.gov.sa/", "native plants, tree-cutting rules"],
+      ["Wikipedia / Wikimedia Commons", "https://www.wikipedia.org/", "overview, photos"]
+    ];
+    view.appendChild(h('<div><p class="intro">' + t("sourcesIntro") + '</p><ul class="ref-list">' + refs.map(function (r) {
+      return "<li>" + (r[1] ? '<a href="' + r[1] + '" target="_blank" rel="noopener">' + esc(r[0]) + "</a>" : "<b>" + esc(r[0]) + "</b>") + '<span class="note"> — ' + esc(r[2]) + "</span></li>";
+    }).join("") + "</ul></div>"));
   }
 
   function lookCard(pair, currentId) {

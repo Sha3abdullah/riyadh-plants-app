@@ -1720,5 +1720,152 @@
    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
    "source": "https://commons.wikimedia.org/wiki/File:Volkameria_inermis_07396.JPG"
   }
+ ],
+ "plumeria": [
+  {
+   "src": "images/plumeria.jpg",
+   "part": "flowers",
+   "file": "Frangipani_after_rain_(Plumeria_obtusa).jpg",
+   "author": "bigwavephoto",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Frangipani_after_rain_(Plumeria_obtusa).jpg"
+  },
+  {
+   "src": "images/plumeria-2.jpg",
+   "part": "tree",
+   "file": "Plumeria_obtusa_-_Naples_Botanical_Garden_-_Naples,_Florida_-_DSC00003.jpg",
+   "author": "Daderot",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "source": "https://commons.wikimedia.org/wiki/File:Plumeria_obtusa_-_Naples_Botanical_Garden_-_Naples,_Florida_-_DSC00003.jpg"
+  },
+  {
+   "src": "images/plumeria-3.jpg",
+   "part": "leaves",
+   "file": "Plumeria_obtusa_(3438755954).jpg",
+   "author": "Dinesh Valke from Thane, India",
+   "license": "CC BY-SA 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Plumeria_obtusa_(3438755954).jpg"
+  }
+ ],
+ "rangoon": [
+  {
+   "src": "images/rangoon.jpg",
+   "part": "flowers",
+   "file": "Combretum_indicum_01.JPG",
+   "author": "Prenn",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Combretum_indicum_01.JPG"
+  },
+  {
+   "src": "images/rangoon-2.jpg",
+   "part": "whole",
+   "file": "Combretum_indicum_-_Orto_botanico_-_Rome,_Italy_-_DSC09909.jpg",
+   "author": "Daderot",
+   "license": "CC0",
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "source": "https://commons.wikimedia.org/wiki/File:Combretum_indicum_-_Orto_botanico_-_Rome,_Italy_-_DSC09909.jpg"
+  }
+ ],
+ "plumbago": [
+  {
+   "src": "images/plumbago.jpg",
+   "part": "flowers",
+   "file": "Blue_plumbago(Plumbago_auriculata)_2703.jpg",
+   "author": "Vengolis",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Blue_plumbago(Plumbago_auriculata)_2703.jpg"
+  },
+  {
+   "src": "images/plumbago-2.jpg",
+   "part": "shrub",
+   "file": "20210731_Hortus_botanicus_Leiden_-_Plumbago_auriculata.jpg",
+   "author": "Rudolphous",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:20210731_Hortus_botanicus_Leiden_-_Plumbago_auriculata.jpg"
+  }
+ ],
+ "vitex": [
+  {
+   "src": "images/vitex.jpg",
+   "part": "shrub",
+   "file": "Vitex-agnus-castus-habit.JPG",
+   "author": "Sten Porse",
+   "license": "CC BY-SA 3.0",
+   "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "source": "https://commons.wikimedia.org/wiki/File:Vitex-agnus-castus-habit.JPG"
+  },
+  {
+   "src": "images/vitex-2.jpg",
+   "part": "shrub",
+   "file": "שיח-אברהם_מצוי_בקריית_שמונה.jpg",
+   "author": "Ariesaada",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:%D7%A9%D7%99%D7%97-%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%9E%D7%A6%D7%95%D7%99_%D7%91%D7%A7%D7%A8%D7%99%D7%99%D7%AA_%D7%A9%D7%9E%D7%95%D7%A0%D7%94.jpg"
+  },
+  {
+   "src": "images/vitex-3.jpg",
+   "part": "leaves",
+   "file": "Vitex_agnus_castus-Gattilier-Feuilles-20210705.jpg",
+   "author": "Daniel VILLAFRUELA",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Vitex_agnus_castus-Gattilier-Feuilles-20210705.jpg"
+  }
+ ],
+ "ipomoea": [
+  {
+   "src": "images/ipomoea.jpg",
+   "part": "flowers",
+   "file": "2014-09-26_08_18_34_Morning_Glory_blossoms_on_Southside_Drive_in_Elko,_Nevada.JPG",
+   "author": "Famartin",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:2014-09-26_08_18_34_Morning_Glory_blossoms_on_Southside_Drive_in_Elko,_Nevada.JPG"
+  },
+  {
+   "src": "images/ipomoea-2.jpg",
+   "part": "whole",
+   "file": "2014-09-26_08_17_55_Morning_Glory_plants_on_Southside_Drive_in_Elko,_Nevada.JPG",
+   "author": "Famartin",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:2014-09-26_08_17_55_Morning_Glory_plants_on_Southside_Drive_in_Elko,_Nevada.JPG"
+  }
+ ],
+ "shamoum": [
+  {
+   "src": "images/shamoum.jpg",
+   "part": "flowers",
+   "file": "Cinnamon_Basil_Cary_NC_IMG_4092.jpg",
+   "author": "bobistraveling",
+   "license": "CC BY 2.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Cinnamon_Basil_Cary_NC_IMG_4092.jpg"
+  },
+  {
+   "src": "images/shamoum-2.jpg",
+   "part": "whole",
+   "file": "Basilic,_jardins_du_muséum_de_Toulouse.JPG",
+   "author": "Caroline Léna Becker",
+   "license": "CC BY 3.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Basilic,_jardins_du_mus%C3%A9um_de_Toulouse.JPG"
+  },
+  {
+   "src": "images/shamoum-3.jpg",
+   "part": "flowers",
+   "file": "9268-Horapa_Flower.jpg",
+   "author": "Sven.petersen",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:9268-Horapa_Flower.jpg"
+  }
  ]
 }
